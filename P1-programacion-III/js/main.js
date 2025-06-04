@@ -193,6 +193,7 @@ function ordenarPorPrecio(array, btn) {
 // Funcion que escucha el evento "Vaciar Carrito" y sobrepisa el arrayCarrito con un array vacio y luego actualiza el carrito llamando a funcion
 function eliminarTodoCarrito(btn) {
     btn.addEventListener("click", function () {
+        console.log("Carrito vaciado");
         arrayCarrito = [];
         actualizarCarrito();
     });
